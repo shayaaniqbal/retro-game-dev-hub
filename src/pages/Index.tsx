@@ -1,13 +1,53 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React, { useEffect, useState } from "react";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import TechSkillsSection from "@/components/TechSkillsSection";
+import ExperienceSection from "@/components/ExperienceSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import EasterEgg from "@/components/EasterEgg";
+import LoadingScreen from "@/components/LoadingScreen";
+import PixelDecoration from "@/components/PixelDecoration";
+import ScrollToTop from "@/components/ScrollToTop";
+import RetroCursor from "@/components/RetroCursor";
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate initial loading
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <>
+      {/* Initial Loading Screen */}
+      <LoadingScreen isLoading={isLoading} />
+      
+      {/* Main Content */}
+      <div className={`transition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
+        <PixelDecoration />
+        <Navigation />
+        <main>
+          <HeroSection />
+          <AboutSection />
+          <ProjectsSection />
+          <TechSkillsSection />
+          <ExperienceSection />
+          <ContactSection />
+        </main>
+        <Footer />
+        <EasterEgg />
+        <ScrollToTop />
+        <RetroCursor />
       </div>
-    </div>
+    </>
   );
 };
 
