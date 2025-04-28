@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 interface Project {
@@ -16,55 +15,51 @@ interface Project {
 }
 
 const ProjectsSection = () => {
-  // Mock project data
   const projects: Project[] = [
     {
       id: 1,
-      title: "Neon Platformer",
-      description: "A fast-paced 2D platformer with neon aesthetics and challenging gameplay. Features procedurally generated levels and a dynamic soundtrack.",
+      title: "Dungeon Escape",
+      description: "A challenging 2D platformer where players navigate through dangerous dungeons filled with traps and enemies. Features procedurally generated levels, multiple character classes, and unique abilities.",
       image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      technologies: ["Unity", "C#", "FMOD"],
-      role: "Lead Developer",
+      technologies: ["Unity", "C#", "Procedural Generation"],
+      role: "Lead Developer & Designer",
       links: {
-        demo: "#",
-        source: "#",
-        download: "#",
+        demo: "https://umaarawan19.wixsite.com/gamedev",
+        download: "https://umaarawan19.wixsite.com/gamedev/blank-1",
       },
     },
     {
       id: 2,
-      title: "Space Odyssey",
-      description: "3D space exploration game with realistic physics and vibrant planetary systems. Players can navigate through galaxies, discover new planets and engage in space combat.",
+      title: "Stellar Voyage",
+      description: "An immersive space exploration game where players command their own starship, discover new planets, and engage in interstellar diplomacy or combat. Features a dynamic galaxy with unique procedural star systems.",
       image: "https://images.unsplash.com/photo-1518365050014-70fe7232897f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      technologies: ["Unreal Engine", "C++", "Blender"],
-      role: "Gameplay Programmer & Level Designer",
+      technologies: ["Unity", "C#", "FMOD Audio"],
+      role: "Gameplay Programmer & System Designer",
       links: {
-        demo: "#",
-        download: "#",
+        demo: "https://umaarawan19.wixsite.com/gamedev",
       },
     },
     {
       id: 3,
-      title: "Dungeon Crawler",
-      description: "A roguelike dungeon crawler with pixel art aesthetics. Features procedural dungeon generation, diverse enemy AI, and extensive item system.",
+      title: "Pixel Quests",
+      description: "A retro-style RPG adventure with classic turn-based combat and an extensive quest system. Features pixel art aesthetics, character progression, and a deep crafting system.",
       image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      technologies: ["Unity", "C#", "Aseprite"],
+      technologies: ["Unity", "C#", "Pixel Art"],
       role: "Solo Developer",
       links: {
-        demo: "#",
-        source: "#",
-        download: "#",
+        demo: "https://umaarawan19.wixsite.com/gamedev",
+        source: "https://github.com/umaarawan",
       },
     },
     {
       id: 4,
-      title: "VR Experience",
-      description: "An immersive VR meditation experience with interactive environments and dynamic audio response to user movements.",
+      title: "VR Training Simulator",
+      description: "An educational VR application designed for corporate training scenarios. Features interactive environments, realistic physics, and progress tracking for trainees.",
       image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      technologies: ["Unity", "C#", "Oculus SDK"],
+      technologies: ["Unity", "C#", "VR Development", "Oculus SDK"],
       role: "VR Developer",
       links: {
-        demo: "#",
+        demo: "https://umaarawan19.wixsite.com/gamedev",
       },
     },
   ];
@@ -84,7 +79,6 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div
@@ -92,7 +86,6 @@ const ProjectsSection = () => {
               className="group pixel-card border-arcade-purple overflow-hidden cursor-pointer"
               onClick={() => setActiveProject(project)}
             >
-              {/* Game Thumbnail with hover effect */}
               <div className="aspect-w-16 aspect-h-9 mb-4 overflow-hidden rounded-pixel">
                 <img
                   src={project.image}
@@ -101,7 +94,6 @@ const ProjectsSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-arcade/80 to-transparent opacity-60"></div>
                 
-                {/* Scanline effect */}
                 <div 
                   className="absolute inset-0 pointer-events-none opacity-30" 
                   style={{ 
@@ -111,7 +103,6 @@ const ProjectsSection = () => {
                 </div>
               </div>
               
-              {/* Project details */}
               <h3 className="font-arcade text-xl text-arcade-cyan mb-2 group-hover:text-shadow-neon transition-all duration-300">
                 {project.title}
               </h3>
@@ -120,7 +111,6 @@ const ProjectsSection = () => {
                 {project.description}
               </p>
               
-              {/* Technologies tags */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, index) => (
                   <span
@@ -144,14 +134,12 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        {/* Project Modal */}
         {activeProject && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-arcade/80 backdrop-blur-sm" onClick={() => setActiveProject(null)}>
             <div 
               className="bg-arcade-dark-purple border-4 border-arcade-purple rounded-pixel max-w-3xl w-full max-h-[90vh] overflow-y-auto crt-screen"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Close button */}
               <div className="sticky top-0 flex justify-end p-2 bg-arcade-dark-purple z-10">
                 <button 
                   className="w-8 h-8 flex items-center justify-center text-white hover:text-arcade-pink"

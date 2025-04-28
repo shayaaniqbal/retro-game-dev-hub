@@ -16,7 +16,7 @@ const AboutSection = () => {
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-arcade-blue opacity-70"></span>
           </h2>
           <p className="font-pixel text-white text-xl max-w-2xl mx-auto">
-            Creating digital worlds and interactive experiences
+            Creative game developer with passion for immersive experiences
           </p>
         </div>
 
@@ -24,19 +24,19 @@ const AboutSection = () => {
           <div className="crt-screen bg-arcade-dark-purple p-6 rounded-pixel border-2 border-arcade-purple/50">
             <div className="prose prose-invert max-w-none">
               <p className="font-body text-lg mb-4">
-                I'm a passionate game developer with over 5 years of experience in creating
-                engaging and immersive gaming experiences. My journey started with a love for
-                retro arcade games that inspired me to build worlds of my own.
+                I'm Umaar Awan, a passionate game developer with experience creating engaging
+                and immersive gaming experiences. My journey in game development started with a fascination
+                for interactive storytelling and creative problem-solving.
               </p>
               <p className="font-body text-lg mb-4">
-                Specializing in gameplay mechanics and interactive systems, I bring technical
-                expertise and creative vision to every project. I've worked across various
-                platforms including PC, mobile, and console.
+                With a strong background in Unity and C#, I specialize in gameplay mechanics, 
+                interactive systems, and game design. I've worked on various projects ranging from 
+                adventure games to educational simulations across multiple platforms.
               </p>
               <p className="font-body text-lg">
-                When I'm not coding, I'm exploring new game design concepts, participating in
-                game jams, or studying the latest advancements in real-time rendering and
-                procedural generation.
+                I'm particularly interested in developing games that combine compelling narratives 
+                with innovative gameplay mechanics. When not coding, I'm expanding my knowledge in 
+                procedural generation, AI systems, and game optimization techniques.
               </p>
             </div>
           </div>
@@ -49,50 +49,50 @@ const AboutSection = () => {
               <div>
                 <div className="flex justify-between mb-1">
                   <span className="font-pixel text-white">Game Development</span>
-                  <span className="font-pixel text-arcade-pink">95%</span>
+                  <span className="font-pixel text-arcade-pink">90%</span>
                 </div>
                 <div className="skill-bar">
-                  <div className="skill-progress bg-arcade-pink animate-pulse" style={{ width: "95%" }}></div>
+                  <div className="skill-progress bg-arcade-pink animate-pulse" style={{ width: "90%" }}></div>
                 </div>
               </div>
               
               <div>
                 <div className="flex justify-between mb-1">
                   <span className="font-pixel text-white">C# Programming</span>
-                  <span className="font-pixel text-arcade-blue">90%</span>
+                  <span className="font-pixel text-arcade-blue">85%</span>
                 </div>
                 <div className="skill-bar">
-                  <div className="skill-progress bg-arcade-blue animate-pulse" style={{ width: "90%" }}></div>
+                  <div className="skill-progress bg-arcade-blue animate-pulse" style={{ width: "85%" }}></div>
                 </div>
               </div>
               
               <div>
                 <div className="flex justify-between mb-1">
                   <span className="font-pixel text-white">Unity Engine</span>
-                  <span className="font-pixel text-arcade-purple">85%</span>
+                  <span className="font-pixel text-arcade-purple">80%</span>
                 </div>
                 <div className="skill-bar">
-                  <div className="skill-progress bg-arcade-purple animate-pulse" style={{ width: "85%" }}></div>
+                  <div className="skill-progress bg-arcade-purple animate-pulse" style={{ width: "80%" }}></div>
                 </div>
               </div>
               
               <div>
                 <div className="flex justify-between mb-1">
-                  <span className="font-pixel text-white">3D Modeling</span>
-                  <span className="font-pixel text-arcade-cyan">70%</span>
+                  <span className="font-pixel text-white">Game Design</span>
+                  <span className="font-pixel text-arcade-cyan">75%</span>
                 </div>
                 <div className="skill-bar">
-                  <div className="skill-progress bg-arcade-cyan animate-pulse" style={{ width: "70%" }}></div>
+                  <div className="skill-progress bg-arcade-cyan animate-pulse" style={{ width: "75%" }}></div>
                 </div>
               </div>
               
               <div>
                 <div className="flex justify-between mb-1">
                   <span className="font-pixel text-white">Unreal Engine</span>
-                  <span className="font-pixel text-arcade-orange">65%</span>
+                  <span className="font-pixel text-arcade-orange">60%</span>
                 </div>
                 <div className="skill-bar">
-                  <div className="skill-progress bg-arcade-orange animate-pulse" style={{ width: "65%" }}></div>
+                  <div className="skill-progress bg-arcade-orange animate-pulse" style={{ width: "60%" }}></div>
                 </div>
               </div>
             </div>

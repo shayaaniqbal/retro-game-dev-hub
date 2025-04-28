@@ -32,12 +32,12 @@ const HeroSection = () => {
       <div className={`container grid md:grid-cols-2 gap-8 items-center transition-all duration-1000 transform ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-arcade text-white mb-6">
-            <span className="block text-arcade-purple animate-glow mb-2">JOHN DOE</span>
+            <span className="block text-arcade-purple animate-glow mb-2">UMAAR AWAN</span>
             <span className="block text-arcade-blue">GAME DEVELOPER</span>
           </h1>
           
           <p className="font-pixel text-xl md:text-2xl text-white mb-8">
-            Crafting immersive gaming experiences with code and creativity
+            Creative programmer crafting engaging gaming experiences
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -55,7 +55,7 @@ const HeroSection = () => {
             {/* Replace with your avatar or game character */}
             <div className="w-full h-full bg-arcade-dark-purple rounded-pixel overflow-hidden flex items-center justify-center">
               <div className="font-arcade text-arcade-purple text-6xl animate-glow">
-                8-BIT
+                UMAAR
               </div>
               {/* Pseudo scanline effect */}
               <div className="absolute inset-0 pointer-events-none" 

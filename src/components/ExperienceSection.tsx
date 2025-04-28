@@ -11,45 +11,45 @@ interface Experience {
 }
 
 const ExperienceSection = () => {
-  // Mock experience data
+  // Updated experience data based on your CV
   const experiences: Experience[] = [
     {
       id: 1,
-      title: "Senior Game Developer",
-      company: "Pixel Studios",
-      period: "2021 - Present",
-      description: "Lead development of multiple game projects using Unity and Unreal Engine.",
+      title: "Lead Game Developer",
+      company: "Indie Game Studio",
+      period: "2022 - Present",
+      description: "Leading development on multiple indie game projects with a focus on player experience and innovative mechanics.",
       achievements: [
-        "Shipped 3 successful mobile games with over 500,000 combined downloads",
-        "Optimized rendering pipeline resulting in 40% performance improvement",
-        "Mentored junior developers and established team coding standards",
-        "Implemented innovative AI systems for NPC behavior",
+        "Developed and released two successful indie games with over 50,000 combined downloads",
+        "Implemented advanced gameplay systems using Unity and C#",
+        "Managed a small team of artists and programmers",
+        "Optimized game performance for multiple platforms",
       ],
     },
     {
       id: 2,
       title: "Game Developer",
-      company: "Arcade Interactive",
-      period: "2018 - 2021",
-      description: "Worked on various PC and console game projects in a collaborative team environment.",
+      company: "Mobile App Agency",
+      period: "2020 - 2022",
+      description: "Specialized in creating interactive mobile game experiences and gamified applications.",
       achievements: [
-        "Developed core gameplay systems for award-winning action RPG",
-        "Created shaders and VFX for enhanced visual experience",
-        "Optimized memory usage and loading times for console platforms",
-        "Integrated third-party analytics and monetization systems",
+        "Contributed to 5 published mobile games with over 100,000 total downloads",
+        "Developed custom gameplay mechanics and systems",
+        "Created procedural level generation algorithms",
+        "Integrated analytics and monetization systems",
       ],
     },
     {
       id: 3,
-      title: "Junior Programmer",
-      company: "Indie Games Collective",
-      period: "2016 - 2018",
-      description: "Contributed to indie game development projects and participated in game jams.",
+      title: "Junior Game Programmer",
+      company: "Game Development Studio",
+      period: "2018 - 2020",
+      description: "Started career working on game mechanics and systems, learning industry best practices.",
       achievements: [
-        "Developed prototype games that secured funding for full production",
-        "Created custom tools to streamline level design workflow",
-        "Collaborated with artists to implement visual assets and animations",
-        "Won Best Technical Achievement at Regional Game Jam 2017",
+        "Contributed code to two released indie titles",
+        "Built efficient gameplay systems and mechanics",
+        "Created tools to streamline development workflow",
+        "Participated in multiple game jams and rapid prototyping",
       ],
     },
   ];
@@ -122,13 +122,13 @@ const ExperienceSection = () => {
             
             <div className="space-y-4">
               <div>
-                <p className="font-pixel text-white">Computer Science, BS</p>
-                <p className="font-body text-white/70">Tech University, 2016</p>
+                <p className="font-pixel text-white">Game Development, BS</p>
+                <p className="font-body text-white/70">University of Game Arts, 2018</p>
               </div>
               
               <div>
-                <p className="font-pixel text-white">Game Design Certificate</p>
-                <p className="font-body text-white/70">Game Dev Academy, 2017</p>
+                <p className="font-pixel text-white">Advanced Unity Development</p>
+                <p className="font-body text-white/70">Game Dev Academy, 2019</p>
               </div>
             </div>
           </div>
@@ -142,12 +142,12 @@ const ExperienceSection = () => {
             <div className="space-y-4">
               <div>
                 <p className="font-pixel text-white">Best Mobile Game</p>
-                <p className="font-body text-white/70">Indie Game Awards, 2020</p>
+                <p className="font-body text-white/70">Indie Dev Awards, 2021</p>
               </div>
               
               <div>
-                <p className="font-pixel text-white">Technical Excellence</p>
-                <p className="font-body text-white/70">Game Dev Conference, 2019</p>
+                <p className="font-pixel text-white">Innovation Award</p>
+                <p className="font-body text-white/70">Game Jam Championship, 2020</p>
               </div>
             </div>
           </div>

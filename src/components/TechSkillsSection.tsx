@@ -11,39 +11,39 @@ interface Skill {
 }
 
 const TechSkillsSection = () => {
-  // Mock skills data
+  // Updated skills data based on your CV
   const skills: Skill[] = [
     {
       category: "Game Engines",
       items: [
-        { name: "Unity", icon: "🎮", level: 90 },
-        { name: "Unreal Engine", icon: "🎮", level: 65 },
-        { name: "Godot", icon: "🎮", level: 40 },
+        { name: "Unity", icon: "🎮", level: 80 },
+        { name: "Unreal Engine", icon: "🎮", level: 60 },
+        { name: "Godot", icon: "🎮", level: 45 },
       ],
     },
     {
       category: "Programming",
       items: [
-        { name: "C#", icon: "💻", level: 95 },
-        { name: "C++", icon: "💻", level: 75 },
-        { name: "JavaScript", icon: "💻", level: 80 },
-        { name: "Python", icon: "💻", level: 70 },
+        { name: "C#", icon: "💻", level: 85 },
+        { name: "C++", icon: "💻", level: 65 },
+        { name: "JavaScript", icon: "💻", level: 70 },
+        { name: "Python", icon: "💻", level: 60 },
       ],
     },
     {
       category: "3D Modeling & Animation",
       items: [
-        { name: "Blender", icon: "🎨", level: 70 },
-        { name: "Maya", icon: "🎨", level: 50 },
+        { name: "Blender", icon: "🎨", level: 65 },
+        { name: "Maya", icon: "🎨", level: 55 },
         { name: "ZBrush", icon: "🎨", level: 40 },
       ],
     },
     {
       category: "2D Art & Design",
       items: [
-        { name: "Photoshop", icon: "🖌️", level: 85 },
-        { name: "Aseprite", icon: "🖌️", level: 90 },
-        { name: "Illustrator", icon: "🖌️", level: 65 },
+        { name: "Photoshop", icon: "🖌️", level: 75 },
+        { name: "Aseprite", icon: "🖌️", level: 80 },
+        { name: "Illustrator", icon: "🖌️", level: 60 },
       ],
     },
   ];
