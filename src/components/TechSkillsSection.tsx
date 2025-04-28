@@ -11,39 +11,43 @@ interface Skill {
 }
 
 const TechSkillsSection = () => {
-  // Updated skills data based on your CV
+  // Updated skills data based on CV
   const skills: Skill[] = [
     {
-      category: "Game Engines",
+      category: "Game Development",
       items: [
-        { name: "Unity", icon: "🎮", level: 80 },
-        { name: "Unreal Engine", icon: "🎮", level: 60 },
-        { name: "Godot", icon: "🎮", level: 45 },
+        { name: "Unity 2D/3D", icon: "🎮", level: 85 },
+        { name: "Game Design", icon: "🎮", level: 80 },
+        { name: "UnityFx", icon: "🎮", level: 75 },
+        { name: "Problem Solving", icon: "🎮", level: 85 },
       ],
     },
     {
       category: "Programming",
       items: [
-        { name: "C#", icon: "💻", level: 85 },
-        { name: "C++", icon: "💻", level: 65 },
-        { name: "JavaScript", icon: "💻", level: 70 },
-        { name: "Python", icon: "💻", level: 60 },
+        { name: "C#", icon: "💻", level: 90 },
+        { name: "Version Control (Git)", icon: "💻", level: 80 },
+        { name: "Performance Optimization", icon: "💻", level: 85 },
+        { name: "Game Systems Documentation", icon: "💻", level: 75 },
       ],
     },
     {
-      category: "3D Modeling & Animation",
+      category: "Development Tools",
       items: [
-        { name: "Blender", icon: "🎨", level: 65 },
-        { name: "Maya", icon: "🎨", level: 55 },
-        { name: "ZBrush", icon: "🎨", level: 40 },
+        { name: "Odin Inspector", icon: "🔧", level: 80 },
+        { name: "Zenject", icon: "🔧", level: 75 },
+        { name: "Firebase", icon: "🔧", level: 70 },
+        { name: "MMP (AppFlyer, Adjust)", icon: "🔧", level: 65 },
       ],
     },
     {
-      category: "2D Art & Design",
+      category: "Mobile Development",
       items: [
-        { name: "Photoshop", icon: "🖌️", level: 75 },
-        { name: "Aseprite", icon: "🖌️", level: 80 },
-        { name: "Illustrator", icon: "🖌️", level: 60 },
+        { name: "iOS Development", icon: "📱", level: 70 },
+        { name: "Android Development", icon: "📱", level: 75 },
+        { name: "In-App Purchases", icon: "📱", level: 70 },
+        { name: "Ad Networks Integration", icon: "📱", level: 80 },
+        { name: "Mediations (Admob, Applovin)", icon: "📱", level: 75 },
       ],
     },
   ];
@@ -92,7 +96,7 @@ const TechSkillsSection = () => {
                         className={`skill-progress ${
                           skill.level >= 80 
                             ? 'bg-arcade-purple' 
-                            : skill.level >= 60 
+                            : skill.level >= 70 
                               ? 'bg-arcade-blue' 
                               : 'bg-arcade-cyan'
                         }`}
@@ -116,20 +120,22 @@ const TechSkillsSection = () => {
           ))}
         </div>
 
-        {/* Tech icons grid */}
+        {/* Digital Skills */}
         <div className="mt-16">
           <h3 className="font-arcade text-2xl text-arcade-orange text-center mb-10">
-            TECHNOLOGIES I USE
+            DIGITAL SKILLS
           </h3>
           
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8 justify-items-center">
-            {[...Array(16)].map((_, index) => (
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
+            {['Unity 2D/3D', 'Game Design', 'C#', 'Version Control (Git)', 'Odin Inspector', 'UnityFx', 
+              'Zenject', 'Problem Solving', 'Performance Optimization', 'Game Systems Documentation', 
+              'Firebase', 'MMP (AppFlyer, Adjust)', 'Mediations (Admob, Applovin)'].map((skill, index) => (
               <div 
                 key={index} 
-                className="w-16 h-16 flex items-center justify-center bg-arcade-dark-purple rounded-pixel border-2 border-arcade-orange/30 hover:border-arcade-orange transition-all duration-300 group"
+                className="w-36 h-16 flex items-center justify-center bg-arcade-dark-purple rounded-pixel border-2 border-arcade-orange/30 hover:border-arcade-orange transition-all duration-300 group p-2"
               >
-                <div className="font-pixel text-3xl group-hover:animate-glow">
-                  {['🎮', '💻', '🎨', '🖌️', '🎧', '📱', '🎬', '📊'][index % 8]}
+                <div className="font-pixel text-sm text-center text-white group-hover:text-arcade-orange transition-colors duration-300">
+                  {skill}
                 </div>
               </div>
             ))}

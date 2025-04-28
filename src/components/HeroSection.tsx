@@ -32,12 +32,12 @@ const HeroSection = () => {
       <div className={`container grid md:grid-cols-2 gap-8 items-center transition-all duration-1000 transform ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-arcade text-white mb-6">
-            <span className="block text-arcade-purple animate-glow mb-2">UMAAR AWAN</span>
+            <span className="block text-arcade-purple animate-glow mb-2">MUHAMMAD UMAR</span>
             <span className="block text-arcade-blue">GAME DEVELOPER</span>
           </h1>
           
           <p className="font-pixel text-xl md:text-2xl text-white mb-8">
-            Creative programmer crafting engaging gaming experiences
+            Passionate game developer with 4+ years experience
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -52,11 +52,13 @@ const HeroSection = () => {
         
         <div className="hidden md:flex justify-center items-center">
           <div className="relative w-64 h-64 pixel-border animate-float">
-            {/* Replace with your avatar or game character */}
+            {/* Replace with avatar image */}
             <div className="w-full h-full bg-arcade-dark-purple rounded-pixel overflow-hidden flex items-center justify-center">
-              <div className="font-arcade text-arcade-purple text-6xl animate-glow">
-                UMAAR
-              </div>
+              <img
+                src="/lovable-uploads/e0bf21ac-b93f-4f40-a70e-28836d0e4067.png"
+                alt="Muhammad Umar"
+                className="w-full h-full object-cover"
+              />
               {/* Pseudo scanline effect */}
               <div className="absolute inset-0 pointer-events-none" 
                    style={{ 

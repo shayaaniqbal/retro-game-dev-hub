@@ -6,52 +6,58 @@ interface Experience {
   title: string;
   company: string;
   period: string;
+  location: {
+    city: string;
+    country: string;
+  };
   description: string;
   achievements: string[];
 }
 
 const ExperienceSection = () => {
-  // Updated experience data based on your CV
+  // Updated experience data based on CV
   const experiences: Experience[] = [
     {
       id: 1,
-      title: "Lead Game Developer",
-      company: "Indie Game Studio",
-      period: "2022 - Present",
-      description: "Leading development on multiple indie game projects with a focus on player experience and innovative mechanics.",
+      title: "Software Engineer",
+      company: "Firiz Games",
+      period: "26/07/2021 - 17/06/2024",
+      location: {
+        city: "Lahore",
+        country: "Pakistan"
+      },
+      description: "Worked as a Software Engineer developing game applications and systems",
       achievements: [
-        "Developed and released two successful indie games with over 50,000 combined downloads",
-        "Implemented advanced gameplay systems using Unity and C#",
-        "Managed a small team of artists and programmers",
-        "Optimized game performance for multiple platforms",
+        "Game Design and Prototyping",
+        "Scalable and Maintainable Code Architecture",
+        "Published Multiple Titles (Android, iOS)",
+        "Memory, Performance and Rendering Optimization",
+        "Technical Leadership and Team Collaboration",
+        "Integration with Tech/Publishing and Existing Systems",
+        "Monetization Strategies (Ad Networks, In-App Purchases)",
+        "Database Integration and Analytics",
+        "Project and Resource Management",
+        "Version Control (Git, SVN, Bitbucket)"
       ],
     },
     {
       id: 2,
-      title: "Game Developer",
-      company: "Mobile App Agency",
-      period: "2020 - 2022",
-      description: "Specialized in creating interactive mobile game experiences and gamified applications.",
+      title: "Software Engineer",
+      company: "Microperts",
+      period: "01/01/2021 - 20/07/2021",
+      location: {
+        city: "Lahore",
+        country: "Pakistan"
+      },
+      description: "Developed game applications focusing on quality and performance",
       achievements: [
-        "Contributed to 5 published mobile games with over 100,000 total downloads",
-        "Developed custom gameplay mechanics and systems",
-        "Created procedural level generation algorithms",
-        "Integrated analytics and monetization systems",
+        "Rapid Prototyping and Agile Iteration",
+        "Effective Team Collaboration",
+        "Comprehensive Bug Analysis and Resolution",
+        "Player Behavior Analytics",
+        "Crash Monitoring and Stability Assurance"
       ],
-    },
-    {
-      id: 3,
-      title: "Junior Game Programmer",
-      company: "Game Development Studio",
-      period: "2018 - 2020",
-      description: "Started career working on game mechanics and systems, learning industry best practices.",
-      achievements: [
-        "Contributed code to two released indie titles",
-        "Built efficient gameplay systems and mechanics",
-        "Created tools to streamline development workflow",
-        "Participated in multiple game jams and rapid prototyping",
-      ],
-    },
+    }
   ];
 
   return (
@@ -85,6 +91,7 @@ const ExperienceSection = () => {
                       <h3 className="font-arcade text-xl text-arcade-orange">{exp.title}</h3>
                       <p className="font-pixel text-white mt-1">{exp.company}</p>
                       <p className="font-pixel text-white/70 text-sm mt-1">{exp.period}</p>
+                      <p className="font-pixel text-white/70 text-sm mt-1">{exp.location.city}, {exp.location.country}</p>
                     </div>
                     
                     <p className="font-body text-white mb-4">{exp.description}</p>
@@ -122,32 +129,43 @@ const ExperienceSection = () => {
             
             <div className="space-y-4">
               <div>
-                <p className="font-pixel text-white">Game Development, BS</p>
-                <p className="font-body text-white/70">University of Game Arts, 2018</p>
+                <p className="font-pixel text-white">Bachelors of Science in Computer Science</p>
+                <p className="font-body text-white/70">University of Information and Technology, 2017-2021</p>
+                <p className="font-body text-white/70 text-sm">
+                  <a href="https://uit.edu.pk/" target="_blank" rel="noopener noreferrer" className="text-arcade-blue hover:underline">https://uit.edu.pk/</a>
+                </p>
+                <p className="font-body text-white/70 text-sm">Lahore, Pakistan</p>
               </div>
               
               <div>
-                <p className="font-pixel text-white">Advanced Unity Development</p>
-                <p className="font-body text-white/70">Game Dev Academy, 2019</p>
+                <p className="font-pixel text-white">F.Sc</p>
+                <p className="font-body text-white/70">Punjab College, 2015-2017</p>
+                <p className="font-body text-white/70 text-sm">
+                  <a href="https://pgc.edu/campus/hafizabad/" target="_blank" rel="noopener noreferrer" className="text-arcade-blue hover:underline">https://pgc.edu/campus/hafizabad/</a>
+                </p>
+                <p className="font-body text-white/70 text-sm">Lahore, Pakistan</p>
               </div>
             </div>
           </div>
           
           <div className="pixel-card border-arcade-orange md:max-w-xs w-full">
             <div className="flex items-center mb-4">
-              <span className="font-pixel text-3xl text-arcade-orange mr-3">🏆</span>
-              <h3 className="font-arcade text-xl text-arcade-orange">AWARDS</h3>
+              <span className="font-pixel text-3xl text-arcade-orange mr-3">🗣️</span>
+              <h3 className="font-arcade text-xl text-arcade-orange">LANGUAGES</h3>
             </div>
             
             <div className="space-y-4">
               <div>
-                <p className="font-pixel text-white">Best Mobile Game</p>
-                <p className="font-body text-white/70">Indie Dev Awards, 2021</p>
+                <p className="font-pixel text-white">Urdu</p>
+                <p className="font-body text-white/70">Mother tongue</p>
               </div>
               
               <div>
-                <p className="font-pixel text-white">Innovation Award</p>
-                <p className="font-body text-white/70">Game Jam Championship, 2020</p>
+                <p className="font-pixel text-white">English</p>
+                <p className="font-body text-white/70">Proficient user</p>
+                <p className="font-body text-white/70 text-sm">
+                  Listening, Reading, Writing, Speaking: C1-C2 level
+                </p>
               </div>
             </div>
           </div>

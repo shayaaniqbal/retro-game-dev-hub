@@ -141,65 +141,48 @@ const ContactSection = () => {
                 <h3 className="font-arcade text-xl text-arcade-blue">EMAIL</h3>
               </div>
               <a 
-                href="mailto:contact@gamedev.com" 
+                href="mailto:umarawan19@gmail.com" 
                 className="font-body text-white hover:text-arcade-blue transition-colors duration-200"
               >
-                contact@gamedev.com
+                umarawan19@gmail.com
               </a>
             </div>
             
             <div className="pixel-card border-arcade-cyan hover:border-arcade-cyan/80">
               <div className="flex items-center mb-4">
-                <span className="font-pixel text-3xl text-arcade-cyan mr-3">🔗</span>
-                <h3 className="font-arcade text-xl text-arcade-cyan">CONNECT</h3>
+                <span className="font-pixel text-3xl text-arcade-cyan mr-3">🌐</span>
+                <h3 className="font-arcade text-xl text-arcade-cyan">WEBSITE</h3>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <a 
-                  href="#" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-white hover:text-arcade-cyan transition-colors duration-200 flex items-center"
-                >
-                  <span className="mr-2">GitHub</span>
-                </a>
-                <a 
-                  href="#" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-white hover:text-arcade-cyan transition-colors duration-200 flex items-center"
-                >
-                  <span className="mr-2">LinkedIn</span>
-                </a>
-                <a 
-                  href="#" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-white hover:text-arcade-cyan transition-colors duration-200 flex items-center"
-                >
-                  <span className="mr-2">Twitter</span>
-                </a>
-                <a 
-                  href="#" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-body text-white hover:text-arcade-cyan transition-colors duration-200 flex items-center"
-                >
-                  <span className="mr-2">Itch.io</span>
-                </a>
-              </div>
+              <a 
+                href="https://umaarawan19.wixsite.com/gamedev" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-body text-white hover:text-arcade-cyan transition-colors duration-200"
+              >
+                umaarawan19.wixsite.com/gamedev
+              </a>
             </div>
             
             <div className="pixel-card border-arcade-pink hover:border-arcade-pink/80">
               <div className="flex items-center mb-4">
-                <span className="font-pixel text-3xl text-arcade-pink mr-3">📄</span>
-                <h3 className="font-arcade text-xl text-arcade-pink">RESUME</h3>
+                <span className="font-pixel text-3xl text-arcade-pink mr-3">📱</span>
+                <h3 className="font-arcade text-xl text-arcade-pink">PHONE</h3>
               </div>
-              <a 
-                href="#" 
-                className="arcade-btn text-arcade-pink text-sm inline-block mt-2"
-              >
-                DOWNLOAD CV
-              </a>
+              <p className="font-body text-white">
+                (+92) 3249730081
+              </p>
+            </div>
+            
+            <div className="pixel-card border-arcade-orange hover:border-arcade-orange/80">
+              <div className="flex items-center mb-4">
+                <span className="font-pixel text-3xl text-arcade-orange mr-3">📍</span>
+                <h3 className="font-arcade text-xl text-arcade-orange">LOCATION</h3>
+              </div>
+              <p className="font-body text-white">
+                G-617 near LACAS School johar town,<br/>
+                Lahore, 54782,<br/>
+                Pakistan
+              </p>
             </div>
           </div>
         </div>

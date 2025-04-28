@@ -28,7 +28,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ isLoading }) => {
   return (
     <div className={`fixed inset-0 z-50 bg-arcade flex flex-col items-center justify-center transition-opacity duration-500 ${isLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
       <h1 className="font-arcade text-4xl sm:text-5xl text-arcade-purple mb-8 animate-glow">
-        UMAAR AWAN
+        MUHAMMAD UMAR
       </h1>
       <div className="w-64 h-6 bg-arcade-dark-purple rounded-pixel overflow-hidden relative">
         <div 
